@@ -96,6 +96,8 @@ function GsapToExample() {
     }
     return (
         <>
+        <div>
+            <h1>Ejemplo de gsap.to y gsap.from</h1>
             <div className='container'>
                 <fieldset>
                     <legend>Triángulos</legend>
@@ -112,7 +114,7 @@ function GsapToExample() {
                     <div className='circle-2'></div>
                     <div className='circle-3'></div>
                 </fieldset>
-                <p>Uso de <strong>gsap.from</strong>esta es la animacion contraria a gsap.to, en vez de decirle hacia donde se mueve, le decimos desde donde se mueve. en una cordenada relativa al elemento. es decir todos los circulos empiezan con un valor de x:100 y regresan a su posicion original (0,0)</p>
+                <p>Uso de <strong>gsap.from</strong>,esta es la animacion contraria a gsap.to, en vez de decirle hacia donde se mueve, le decimos desde donde se mueve. en una cordenada relativa al elemento. es decir todos los circulos empiezan con un valor de x:100 y regresan a su posicion original (0,0)</p>
             </div>
             <div className='container'>
                 <fieldset>
@@ -125,8 +127,9 @@ function GsapToExample() {
             <div className='container-btn'>
                 {/* usamos una funcion anonima para ejecutar ambas funciones */}
                 <button className='btn' onClick={() => { triangleAnimation(); circleAnimation(); squareAnimation(); }}>Animar</button>
-                <button className='btn' onClick={stopAnimations}>Detener</button>
+                <button className='btn' onClick={stopAnimations}>Reiniciar</button>
             </div>
+        </div>
         </>
     )
 }

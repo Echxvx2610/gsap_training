@@ -1,12 +1,11 @@
-import gsap from 'gsap'
 import './App.css'
-import { useEffect } from 'react'
 import GsapToExample from './components/GsapToExample'
-
+import GsapStaggers from './components/GsapStaggers'
 function App() {
   return (
     <>
       <GsapToExample />
+      <GsapStaggers />
     </>
   )
 }
